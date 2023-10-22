@@ -3,17 +3,22 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int counter;
+void f(void);
 
-void set_counter()
-{
-	counter=20;
-}
 int main(int argc, char *argv[]) {
-	printf("counter=%d\n", counter);
-	set_counter();
-	printf("counter=%d\n", counter);
+
+	int i;
+	for (i=0;i<5;i++)
+	{
+		f();
+	}
 
 	system("PAUSE");
 	return 0;
+}
+void f(void)
+{
+	int i;
+	for (i=0; i<10; i++)
+	printf("#");
 }
